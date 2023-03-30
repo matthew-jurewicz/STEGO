@@ -1,7 +1,7 @@
 output_root: '../'
-pytorch_data_dir: '/datadrive/pytorch-data/'
+pytorch_data_dir: '../'
 experiment_name: "exp1"
-log_dir: "cocostuff27"
+log_dir: "log"
 azureml_logging: True
 submitting_to_aml: False
 
@@ -11,11 +11,11 @@ max_steps: 5000
 batch_size: 16
 
 num_neighbors: 7
-dataset_name: "cocostuff27"
+dataset_name: "directory"
 
 # Used if dataset_name is "directory"
-dir_dataset_name: ~
-dir_dataset_n_classes: 5
+dir_dataset_name: "geotiff_tiles"
+dir_dataset_n_classes: 6
 
 has_labels: False
 crop_type: "five"
@@ -55,13 +55,13 @@ aug_alignment_weight: 0.0
 correspondence_weight: 1.0
 
 
-# IAROA vit small 1/31/22
+# Potsdam vit small 1/31/22
 neg_inter_weight: 0.63
 pos_inter_weight: 0.25
 pos_intra_weight: 0.67
 neg_inter_shift: 0.46
-pos_inter_shift: 0.12
-pos_intra_shift: 0.18
+pos_inter_shift: 0.02
+pos_intra_shift: 0.08
 
 # Potsdam vit small 1/31/22
 #neg_inter_weight: 0.63
