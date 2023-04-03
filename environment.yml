@@ -15,6 +15,7 @@ dependencies:
 - opencv
 - cupy
 - pytorch-lightning
+- gdal
 - pip:
   - matplotlib>=3.3,<3.4
   - psutil>=5.8,<5.9
@@ -32,6 +33,8 @@ dependencies:
   - easydict
   - torchpq
   - pydensecrf
+  - pillow
+  - rasterio
   - setuptools==59.5.0
   - pyDeprecate==0.3.1
 name: stego
