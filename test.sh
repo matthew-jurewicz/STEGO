@@ -1,6 +1,6 @@
 #!/bin/bash
 
-conda env create -f environment.yml -y
+conda env create -f environment.yml
 conda activate stego
 python dload_aoi.py
 ./split.sh
