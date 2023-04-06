@@ -1,5 +1,6 @@
 #!/bin/bash
 
+conda init
 conda env create -f environment.yml
 conda activate stego
 python dload_aoi.py
